@@ -1,7 +1,7 @@
 version: '3'
 services:
   java:
-    image: rahamshaik/nitjava:latest
+    image: rahamshaik/nitjava:v1
     ports:
       - "8000:80"
     volumes:
@@ -10,7 +10,7 @@ services:
       replicas: 3
 
   devops:
-    image: rahamshaik/nitdevops:latest
+    image: rahamshaik/nitdevops:v1
     ports:
       - "8001:80"
     volumes:
@@ -19,7 +19,7 @@ services:
       replicas: 3
 
   datascience:
-    image: rahamshaik/nitdatascience:latest
+    image: rahamshaik/nitdatascience:v1
     ports:
       - "8002:80"
     volumes:
