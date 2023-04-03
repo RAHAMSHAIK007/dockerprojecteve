@@ -6,6 +6,8 @@ services:
       - "8000:80"
     volumes:
       - "javavolume"
+    deploy:
+      replicas: 3
 
   devops:
     image: rahamshaik/nitdevops:latest
@@ -13,6 +15,8 @@ services:
       - "8001:80"
     volumes:
       - "devopsvolume"
+    deploy:
+      replicas: 3
 
   datascience:
     image: rahamshaik/nitdatascience:latest
@@ -20,3 +24,5 @@ services:
       - "8002:80"
     volumes:
       - "datasciencevolume"
+    deploy:
+      replicas: 3
