@@ -1,28 +1,21 @@
-version: '3'
+---
+version: "3"
 services:
   java:
     image: rahamshaik/nitjava:v1
     ports:
-      - "8000:80"
-    volumes:
-      - "volume1"
+      - 8000:80
     deploy:
       replicas: 3
-
   devops:
     image: rahamshaik/nitdevops:v1
     ports:
-      - "8001:80"
-    volumes:
-      - "volume2"
+      - 8001:80
     deploy:
       replicas: 3
-
   datascience:
     image: rahamshaik/nitdatascience:v1
     ports:
-      - "8002:80"
-    volumes:
-      - "volume3"
+      - 8002:80
     deploy:
       replicas: 3
