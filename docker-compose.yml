@@ -2,19 +2,19 @@
 version: "3"
 services:
   java:
-    image: rahamshaik/nitjava:v1
+    image: rahamshaik/nitjava:latest
     ports:
       - 8000:80
     deploy:
       replicas: 3
   devops:
-    image: rahamshaik/nitdevops:v1
+    image: rahamshaik/nitdevops:latest
     ports:
       - 8001:80
     deploy:
       replicas: 3
   datascience:
-    image: rahamshaik/nitdatascience:v1
+    image: rahamshaik/nitdatascience:latest
     ports:
       - 8002:80
     deploy:
