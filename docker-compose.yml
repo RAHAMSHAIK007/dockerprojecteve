@@ -1,0 +1,22 @@
+version: '3'
+services:
+  java:
+    image: rahamshaik/nitjava:latest
+    ports:
+      - "8000:80"
+    volumes:
+      - "javavolume"
+
+  devops:
+    image: rahamshaik/nitdevops:latest
+    ports:
+      - "8001:80"
+    volumes:
+      - "devopsvolume"
+
+  datascience:
+    image: rahamshaik/nitdatascience:latest
+    ports:
+      - "8002:80"
+    volumes:
+      - "datasciencevolume"
