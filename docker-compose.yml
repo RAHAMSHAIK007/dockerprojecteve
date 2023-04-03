@@ -5,7 +5,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - "javavolume"
+      - "volume1"
     deploy:
       replicas: 3
 
@@ -14,7 +14,7 @@ services:
     ports:
       - "8001:80"
     volumes:
-      - "devopsvolume"
+      - "volume2"
     deploy:
       replicas: 3
 
@@ -23,6 +23,6 @@ services:
     ports:
       - "8002:80"
     volumes:
-      - "datasciencevolume"
+      - "volume3"
     deploy:
       replicas: 3
